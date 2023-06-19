@@ -46,4 +46,10 @@
     font-weight: 600;
     font-style: italic;
   }
+
+.title1 {
+  font-family: 'Gotham';
+  font-size: 48px;
+  color: #fff;
+}
   
