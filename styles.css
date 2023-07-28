@@ -30,7 +30,12 @@
 
 .title1 {
   font-size: 72px;
-  
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
 }
 
 #logo {
