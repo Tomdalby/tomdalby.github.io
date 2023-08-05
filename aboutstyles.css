@@ -229,6 +229,26 @@
     margin-left: 8px;
     justify-content: center;
   }
+
+  .contact-insta {
+    font-family: 'Gotham';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-top: -10px;
+    margin-left: 8px;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: font-size 0.3s ease;
+    cursor: pointer;
+  }
+
+  .contact-insta:hover {
+    font-size: 16px; /* Slightly larger font size on hover */
+  }
   
   @media screen and (max-width: 600px) {
     .content-area {
