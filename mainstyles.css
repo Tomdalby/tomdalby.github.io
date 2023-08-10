@@ -47,19 +47,7 @@
     font-style: italic;
   }
 
-.title1 {
-  font-family: 'Gotham';
-  font-size: 24px;
-  color: #fff;
-}
-
-.bodycopy {
-    font-family: 'Gotham';
-    font-size: 24px;
-    color: #000000;
-  }
-
-.container-page {
+  .container-page {
     background-color: #000000;
     display: flex;
     flex-direction: column;
@@ -76,20 +64,26 @@
   
   .container-header {
     display: flex;
-    gap: 12px;
+    gap: 24px;
     justify-content: center;
     font-family: Gotham;
     font-weight: 500;
     font-size: 16px;
     height: 60px;
-    color: #000000;
-    padding-right: 30px;
-    padding-top: 20px
+    color: #ffffff;
+    margin-right: 0px;
+    margin-left: 100px;
+    margin-top: 100px;
   }
   
   #logo {
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
+  }
+
+  #logo-typeface {
+    width: 400px;
+    height: 80px;
   }
   
   .content-wrapper {
@@ -100,10 +94,13 @@
   
   .menu-buttons {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-top: -10px;
-  }
+    gap: 28px;
+    text-align: center;
+    margin-top: 50px;
+  } 
   
   .menu-button {
     background-color:#000000;
