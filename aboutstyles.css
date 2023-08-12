@@ -46,31 +46,12 @@
     font-weight: 600;
     font-style: italic;
   }
-/* 
-.title1 {
-  font-family: 'Gotham';
-  font-size: 50px;
-  color: #fff;
-  font-weight: 300;
-} */
-
-
 
 .container-page {
     background-color: #000000;
     display: flex;
     flex-direction: column;
     padding: 0;
-  }
-
-  .container-header a {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    text-decoration: none;
-    color: inherit;
-    /* margin-left: 10%;
-    margin-right: 10%; */
   }
   
   .container-header {
@@ -83,51 +64,12 @@
     height: 60px;
     color: #000000;
     padding-left: 100px;
-    padding-top: 120px
-  }
-  
-  #logo {
-    width: 100px;
-    height: 100px;
+    padding-top: 80px
   }
 
   #logo-typeface {
-    width: 500px;
-    height: 100px;
+    height: 140px;
   }
-
-  .location-subheading-photo-logo-wrapper {
-    display: flex;
-    gap: 72px;
-    justify-content: center;
-    font-size: 16px;
-    height: 60px;
-  }
-
-  .photo-logopart {
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 0px;
-    font-family: 'Gotham';
-    font-style: italic;
-    font-weight: 500;
-    margin-top: 30px;
-    letter-spacing: 6px;
-    margin-left: -20px;
-  }
-
-  .location-statment {
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 0px;
-    margin-top: 30px;
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-style: italic;
-    margin-left: 60px;
-}
   
   .content-wrapper {
     display: flex;
@@ -143,7 +85,7 @@
     justify-content: center;
     gap: 28px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 110px;
   } 
   
   .menu-button {
@@ -253,16 +195,16 @@
   
   @media screen and (max-width: 600px) {
     .content-area {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+      flex-direction: column;
     }
   
     .container-image {
-      max-width: 100%; /* Allow the image to take up full width on small screens */
+      max-width: 100%; 
       margin-right: 0;
     }
   
     .text-box {
-      max-width: 100%;
+      max-width: 80%;
     }
     @media screen and (max-width: 600px) {
       .image-carousel {
@@ -272,6 +214,7 @@
     .container-header {
      padding: 0;
      margin-top: 8%s;
+     /* margin-left: 150px; */
    }
      .container-image {
        height: auto;
@@ -279,39 +222,13 @@
        object-fit: contain;
      }
        #logo-typeface {
-     width: 70%;
-   }
-     #logo {
-     width: 15%;
-     display: none;
-     /* height: 80px; */
-   }
-
-   .location-subheading-photo-logo-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    gap: 0px;
-   }
+     width: 90vw;
   
-   .location-statment {
-    font-size: 12px;
-    margin-top: 10px;
-    margin-right: 150px;
-    display: none;
    }
 
-  .photo-logopart {
-    font-size: 12px;
-    margin-top: 35px;
-    letter-spacing: 4px;
-    /* margin-left: 140px; */
-  }
 
   .menu-buttons {
-    margin-top: 30px;
+    margin-top: 80px;
   } 
  
    }
