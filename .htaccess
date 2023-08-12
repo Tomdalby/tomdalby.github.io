@@ -1,4 +1,4 @@
 RewriteEngine on
-RewriteCond %{REQUEST_URI} !/maintenance.html$
-RewriteCond %{REQUEST_URI} !/styles
-RewriteRule $ /maintenance.html [R=302,L]
+RewriteCond %{REQUEST_URI} !/portrait.html$
+RewriteCond %{REQUEST_URI} !/mainstyles
+RewriteRule $ /portrait.html [R=302,L]
