@@ -1,60 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portrait</title>
-  <link rel="stylesheet" href="normalise.css">
-  <link rel="stylesheet" href="mainstyles.css">
-  <link rel="stylesheet" href="textstyles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portrait</title>
+    <link rel="stylesheet" href="normalise.css" />
+    <link rel="stylesheet" href="mainstyles.css" />
+    <!-- <link rel="stylesheet" href="textstyles.css"> -->
+  </head>
 
-<body class="container-page">
-  <div class="container-header">
-    <a href="portrait.html">
-      <img id="logo-typeface" src="images/LOGO RE-EXPORT FROM FIGMA/THOMAS DALBY WITH LOGO (WHITE).svg" alt="">
-  </a>
-  </div>
-  <div class="content-wrapper">
-    <div class="menu-buttons">
-      <a href="portrait.html"><button class="menu-button" style="font-size: 16px;">Portrait</button></a>
-      <a href="spaces.html"><button class="menu-button" >Spaces</button></a>
-      <a href="music.html"><button class="menu-button">Music</button></a>  
-      <a href="about.html"><button class="menu-button">About</button></a>         
+  <body class="container-page">
+    <div class="container-header">
+      <a id="logo-typeface" href="portrait.html">
+        <img
+          src="images/LOGO RE-EXPORT FROM FIGMA/THOMAS DALBY PHOTO WITH LOGO (WHITE).svg"
+          alt=""
+        />
+      </a>
+      <div class="desktop-menu-buttons">
+        <a href="portrait.html"
+          ><button class="desktop-menu-button" style="font-size: 16px">
+            Portrait
+          </button></a
+        >
+        <a href="spaces.html"
+          ><button class="desktop-menu-button">Spaces</button></a
+        >
+        <a href="music.html"
+          ><button class="desktop-menu-button">Music</button></a
+        >
+        <a href="about.html"
+          ><button class="desktop-menu-button">About</button></a
+        >
+      </div>
+      <div id="page-title">
+        Portrait
+        <div id="burger-menu">
+          <img src="images/Mobile assets/Burger Menu.svg" alt="" />
+        </div>
+      </div>
     </div>
+
+    <div id="mobile-menu" class="mobile-menu-hidden">
+      <div class="buttons-wrapper">
+        <a href="portrait.html">Portrait</a>
+        <a href="spaces.html">Spaces</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+      </div>
+      <div id="copyright">Copyrigth Thomas Dalby 2023</div>
+    </div>
+
     <div class="image-carousel">
-      <img class="container-image" src="images/portraitimages/INES APPAREL COLLECTION-11.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/franzi.boxer.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/SOPHIE CELLO-7.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/INES APPAREL COLLECTION-6.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/SANTORINI BLACK BEACH-1.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/I LOVE YELLOW WEB-51.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/leo.red.curtains.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/SANTORINI BLACK BEACH-2.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/DAVORIN MORI-24.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/giddy.lader.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/SOPHIE CELLO-5.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/Tina.flowers.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/GIDDY KALAMUNDA TRAILS-52.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/giddy.kalumunda.no.helmet.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/KAMILA PLAY14.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/Darya.plants.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/LIPSTICK SLIPSTICK-11.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/DOSLOSS AND CADD - PRINT-3.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/GIDDY DON'T NEED NO HELMET-5.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/I LOVE YELLOW WEB-51.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/Tayah.backyard.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/Tayah.white.shed.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/Giddy.blurry.motorbike.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/GIDDY DON'T NEED NO HELMET-25.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/Darya.red.jacket.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/SOPHIE CELLO-4.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/luis.blackbackground.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/leo.blackandwhite.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/leo.window.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/INES APPAREL COLLECTION-2.jpg" alt="">
-      <img class="container-image" src="images/portraitimages/INES APPAREL COLLECTION-28.jpg" alt="">
+      <img
+        class="container-image"
+        src="images/portraitimages/INES APPAREL COLLECTION-11.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/franzi.boxer.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/SOPHIE CELLO-7.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/INES APPAREL COLLECTION-6.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/SANTORINI BLACK BEACH-1.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/I LOVE YELLOW WEB-51.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/leo.red.curtains.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/SANTORINI BLACK BEACH-2.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/DAVORIN MORI-24.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/giddy.lader.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/SOPHIE CELLO-5.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/Tina.flowers.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/GIDDY KALAMUNDA TRAILS-52.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/giddy.kalumunda.no.helmet.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/KAMILA PLAY14.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/Darya.plants.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/LIPSTICK SLIPSTICK-11.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/DOSLOSS AND CADD - PRINT-3.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/GIDDY DON'T NEED NO HELMET-5.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/I LOVE YELLOW WEB-51.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/Tayah.backyard.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/Tayah.white.shed.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/Giddy.blurry.motorbike.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/GIDDY DON'T NEED NO HELMET-25.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/Darya.red.jacket.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/SOPHIE CELLO-4.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/luis.blackbackground.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/leo.blackandwhite.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/leo.window.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/INES APPAREL COLLECTION-2.jpg"
+        alt=""
+      />
+      <img
+        class="container-image"
+        src="images/portraitimages/INES APPAREL COLLECTION-28.jpg"
+        alt=""
+      />
     </div>
-  </div>
-  <script src="scripts.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
+</html>
