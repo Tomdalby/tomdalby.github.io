@@ -1,234 +1,329 @@
 @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-Light_Web.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-LightItalic_Web.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-Book_Web.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-BookItalic_Web.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-Medium_Web.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-MediumItalic_Web.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-Bold_Web.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/woff/Gotham-BoldItalic_Web.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-  }
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-Light_Web.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-LightItalic_Web.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-Book_Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-BookItalic_Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-Medium_Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-MediumItalic_Web.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-Bold_Web.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/woff/Gotham-BoldItalic_Web.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
 
 .container-page {
-    background-color: #000000;
-    display: flex;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  /* z-index: 1; */
+}
+
+.container-header {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  font-family: Gotham;
+  font-weight: 600;
+  font-size: 16px;
+  height: 60px;
+  color: #000000;
+  padding-top: 80px;
+}
+
+#logo-typeface {
+  /* padding-top: 30px; */
+  height: 80px;
+}
+
+#burger-menu {
+  display: none;
+  height: 48px;
+  width: 48px;
+  flex-direction: center;
+  z-index: 1000;
+}
+
+#burger-menu img {
+  display: flex;
+  width: 28px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.menu-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0px 0;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: Gotham;
+}
+
+.menu-button {
+  transition: font-size 0.3s ease;
+}
+
+.menu-button:hover {
+  font-size: 16px;
+}
+
+.menu-button.active {
+  font-size: 16px;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.container-image {
+  max-width: 350px;
+}
+.container-image img {
+  width: 100%;
+  height: auto;
+}
+
+.info-parent-container {
+  /* margin: 0; why is this not working?? */
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box-bio {
+  max-width: 330px;
+  background: #000000;
+  padding-bottom: 20px;
+}
+
+.bodycopy {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffffff;
+  padding-top: 24px;
+}
+
+.contact-information {
+  gap: 15px;
+  padding-left: 12px;
+  max-width: 370px;
+  background: #000000;
+  padding: none;
+}
+
+.contact-email,
+.contact-phone-number,
+.contact-insta {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-email {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-size: 13px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.contact-phone-number {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffffff;
+  padding-bottom: 7px;
+}
+
+.contact-insta {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  transition: font-size 0.3s ease;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.contact-insta:hover {
+  font-size: 16px; /* Slightly larger font size on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .content-area {
     flex-direction: column;
-    padding: 0;
-  }
-  
-  .container-header {
-    display: flex;
-    gap: 12px;
     justify-content: center;
-    font-family: Gotham;
-    font-weight: 600;
-    font-size: 16px;
-    height: 60px;
-    color: #000000;
-    padding-left: 100px;
-    padding-top: 80px
+    align-items: center;
+    max-height: 100vh;
+    overflow-y: auto;
+    margin-top: 90px;
+    padding-bottom: 80px;
+  }
+
+  .container-image {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .text-box {
+    max-width: 80%;
+  }
+  .image-carousel {
+    padding-top: 60px;
+  }
+
+  .container-header {
+    padding: 0;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1005;
+  }
+
+  .container-image {
+    height: auto;
   }
 
   #logo-typeface {
-    height: 140px;
+    width: 90vw;
   }
-  
-  .content-wrapper {
+
+  #burger-menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .menu-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 28px;
-    text-align: center;
-    margin-top: 110px;
-  } 
-  
-  .menu-button {
-    background-color:#000000;
-    color: #ffffff;
-    border: none;
-    padding: 0px 0;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    font-family: Gotham;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 105px;
+    padding-right: 50px;
   }
-
-  .menu-button {
-    /* existing styles */
-    transition: font-size 0.3s ease; /* optional: smooth transition */
-  }
-  
-  .menu-button:hover {
-    font-size: 16px; /* adjust as needed */
-  }
-  
-  .menu-button.active {
-    font-size: 16px; /* adjust as needed */
-  }
-
-  .content-area {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    margin-top: 40px;
-  }
-  
-  .container-image img {
-    width: 100%; 
-    height: auto; 
-  }
-  
-  .container-image {
-    max-width: 350px; /* Set a max-width to control the size of the image */
-  }
-  
-  .text-box-bio {
-    max-width: 370px; /* Control the width of the text box. Adjust as needed */
-    background: #000000; 
-  }
-
-  .bodycopy {
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 1.4;
-    color: #ffffff;
-    margin-top: 24px;
-    margin-left: 8px;
-    justify-content: center;
-
-  }
-
-  .contact-info-textbox-wrapper {
-    max-width: 370px;
-    background: #000000; 
-    padding: none;
-  }
-
-  .contact-email {
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 1.4;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-left: 8px;
-    justify-content: center;
-  }
-
-  .contact-phone-number {
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 1.4;
-    color: #ffffff;
-    margin-top: -10px;
-    margin-left: 8px;
-    justify-content: center;
-  }
-
-  .contact-insta {
-    font-family: 'Gotham';
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 1.4;
-    color: #ffffff;
-    margin-top: -10px;
-    margin-left: 8px;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    transition: font-size 0.3s ease;
-    cursor: pointer;
-  }
-
-  .contact-insta:hover {
-    font-size: 16px; /* Slightly larger font size on hover */
-  }
-  
-  @media screen and (max-width: 600px) {
-    .content-area {
-      flex-direction: column;
-    }
-  
-    .container-image {
-      max-width: 100%; 
-      margin-right: 0;
-    }
-  
-    .text-box {
-      max-width: 80%;
-    }
-    @media screen and (max-width: 600px) {
-      .image-carousel {
-     padding-top: 60px;
-   }
-
-    .container-header {
-     padding: 0;
-     margin-top: 8%s;
-     /* margin-left: 150px; */
-   }
-     .container-image {
-       height: auto;
-       max-height: 80vh;
-       object-fit: contain;
-     }
-       #logo-typeface {
-     width: 90vw;
-   }
-
 
   .menu-buttons {
     margin-top: 80px;
-  } 
- 
-   }
+    display: none;
   }
+
+  #mobile-menu {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: -200%; /* start off the screen */
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(25, 25, 25, 0.95);
+
+    z-index: 99; /* above the header */
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    padding-top: 20px;
+  }
+
+  #mobile-menu a {
+    padding: 20px;
+    pointer-events: auto;
+    color: white;
+    text-decoration: none;
+    /* width: 100%; */
+    justify-content: center;
+    display: block;
+    text-align: center;
+    font-family: Gotham;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    z-index: 120;
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the children elements horizontally */
+    justify-content: center; /* Center the children elements vertically */
+    width: 100%; /* Ensure it takes the full width of its parent */
+    max-width: 50%; /* You can adjust this value as needed */
+    text-align: center;
+    align-self: center;
+  }
+}
+
+#mobile-menu.active {
+  right: 0;
+}
+
+#copyright {
+  display: flex;
+  position: absolute;
+  justify-content: bottom;
+  color: white;
+  text-decoration: none;
+  font-family: Gotham;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  align-self: center;
+  margin-top: 500px;
+  z-index: 100;
+}
