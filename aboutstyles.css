@@ -113,6 +113,10 @@
   font-family: Gotham;
 }
 
+.buttons-wrapper {
+  display: none;
+}
+
 .menu-button {
   transition: font-size 0.3s ease;
 }
@@ -138,6 +142,9 @@
 .container-image img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .info-parent-container {
@@ -191,6 +198,8 @@
   line-height: 1.4;
   color: #ffffff;
   padding-bottom: 7px;
+  /* text-decoration: none;    <<<<<  This isnt working??
+  color: inherit; */
 }
 
 .contact-insta {
@@ -215,8 +224,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
-    overflow-y: auto;
     margin-top: 90px;
     padding-bottom: 80px;
   }
@@ -307,23 +314,23 @@
     text-align: center;
     align-self: center;
   }
+
+  #copyright {
+    display: flex;
+    position: absolute;
+    justify-content: bottom;
+    color: white;
+    text-decoration: none;
+    font-family: Gotham;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    align-self: center;
+    margin-top: 500px;
+    z-index: 100;
+  }
 }
 
 #mobile-menu.active {
   right: 0;
-}
-
-#copyright {
-  display: flex;
-  position: absolute;
-  justify-content: bottom;
-  color: white;
-  text-decoration: none;
-  font-family: Gotham;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  align-self: center;
-  margin-top: 500px;
-  z-index: 100;
 }
