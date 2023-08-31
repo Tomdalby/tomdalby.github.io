@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   burgerMenu.addEventListener("click", function () {
     if (mobileMenu.classList.contains("active")) {
       mobileMenu.classList.remove("active");
+      body.style.overflow = "auto";
     } else {
       mobileMenu.classList.add("active");
       body.style.overflow = "hidden";
@@ -33,13 +34,10 @@ window.addEventListener('scroll', function() {
         header.classList.add('header-hidden');
     } else {
         header.classList.remove('header-hidden');
-        // If you want the header to remain hidden until near the top, then uncomment the below block
-        /*
-        if (scrollTop < 50) {
-            header.classList.remove('header-hidden');
-        }
-        */
     }
 
     lastScrollTop = scrollTop;
 });
+
+
+
