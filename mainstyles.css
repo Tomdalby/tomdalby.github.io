@@ -159,13 +159,13 @@
     display: flex;
     position: fixed;
     top: 0;
-    /* gap: 48px; */
     justify-content: center;
     align-items: center;
     color: #ffffff;
     width: 100%;
     z-index: 1005;
     transition: top 0.5s;
+    padding-top: 10px;
   }
 
   .header-hidden {
@@ -272,6 +272,6 @@
   font-style: normal;
   font-size: 12px;
   align-self: center;
-  margin-top: 500px;
+  margin-top: 400px;
   z-index: 100;
 }
