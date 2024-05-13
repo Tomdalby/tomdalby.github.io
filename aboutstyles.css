@@ -264,6 +264,8 @@
     right: 0;
     padding-top: 105px;
     padding-right: 50px;
+    position: relative; /* Ensure the z-index works */
+    z-index: 1000;
   }
 
   .menu-buttons {
