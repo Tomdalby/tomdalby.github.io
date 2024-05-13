@@ -14,9 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 let lastScrollTop = 0;
+let scrolledDistance = 0; // New variable to keep track of the scrolled distance
 const header = document.querySelector('.container-header');
 const delta = 5;
+const scrollThreshold = 300; // New variable, change the value to adjust the scroll threshold
 
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -26,18 +29,30 @@ window.addEventListener('scroll', function() {
         return;
     }
 
-    if (Math.abs(lastScrollTop - scrollTop) <= delta) {
+    let diff = Math.abs(lastScrollTop - scrollTop); // Calculate the scroll difference
+
+    if (diff <= delta) {
         return; // Return if the threshold isn't reached
     }
 
+    // Update the scrolled distance based on the direction
     if (scrollTop > lastScrollTop) {
-        header.classList.add('header-hidden');
+        scrolledDistance += diff;
+        if (scrolledDistance >= scrollThreshold) {
+            header.classList.add('header-hidden');
+            scrolledDistance = 0; // Reset the scrolled distance
+        }
     } else {
-        header.classList.remove('header-hidden');
+        scrolledDistance -= diff;
+        if (scrolledDistance <= -scrollThreshold) {
+            header.classList.remove('header-hidden');
+            scrolledDistance = 0; // Reset the scrolled distance
+        }
     }
 
-    lastScrollTop = scrollTop;
+    lastScrollTop = scrollTop; // Update lastScrollTop for the next iteration
 });
+
 
 
 

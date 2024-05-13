@@ -164,7 +164,7 @@
     color: #ffffff;
     width: 100%;
     z-index: 1005;
-    transition: top 0.5s;
+    transition: top 1.5s;
     padding-top: 10px;
   }
 
@@ -219,7 +219,7 @@
     width: 100vw;
     height: 100%;
     background-color: rgba(25, 25, 25, 0.95);
-    z-index: 99; /* above the header */
+    z-index: 99;
     display: flex;
     flex-direction: column;
     align-items: column;
