@@ -178,7 +178,8 @@
 
 .contact-email,
 .contact-phone-number,
-.contact-insta {
+.contact-insta,
+.website-signatures {
   margin: 0;
   padding: 0;
 }
@@ -213,6 +214,15 @@
   transition: font-size 0.3s ease;
   cursor: pointer;
   padding-bottom: 10px;
+}
+
+.website-signatures {
+  font-family: "Gotham";
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffffff;
+  padding-bottom: 7px;
 }
 
 .contact-insta:hover {
@@ -259,12 +269,11 @@
   #burger-menu {
     display: flex;
     justify-content: center;
-    position: absolute;
     top: 0;
     right: 0;
-    padding-top: 105px;
-    padding-right: 50px;
-    position: relative; /* Ensure the z-index works */
+    padding-top: 104px;
+    padding-right: 27px;
+    position: fixed;
     z-index: 1000;
   }
 
