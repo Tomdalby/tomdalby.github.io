@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !/portrait.html$
-RewriteCond %{REQUEST_URI} !/mainstyles
-RewriteRule $ /portrait.html [R=302,L]

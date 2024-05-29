@@ -51,8 +51,6 @@ window.addEventListener('scroll', function() {
     }
 
     lastScrollTop = scrollTop; // Update lastScrollTop for the next iteration
-});
-
-
+  });
 
 
